@@ -1,8 +1,7 @@
-// Trigger page tweaks with css animation trigger.
 document.addEventListener("animationstart", function(e) {
   if (e.animationName === 'navbarReady') {
     const navbarContainer = e.target.children[0];
-    navbarContainer.className = 'navbar-container'; // Make navbar width responsive
+    navbarContainer.className = 'navbar-container'; 
     
     const socialsDropdownHTML = `<li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navBarSocialsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -16,6 +15,6 @@ document.addEventListener("animationstart", function(e) {
     </li>`;
 
     const userAccountDropdown = document.getElementById('user-account-dropdown');
-    userAccountDropdown.insertAdjacentHTML('beforebegin', socialsDropdownHTML); // Add resources and socials dropdowns
+    userAccountDropdown.insertAdjacentHTML('beforebegin', socialsDropdownHTML); 
   }
 }, false);
