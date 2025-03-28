@@ -14,7 +14,6 @@ function addClock() {
   var navbarNav = document.querySelector('.navbar-nav.mr-auto');
   navbarNav.insertAdjacentHTML('beforeend', clockContent);
 
-  // Update clock every second
   setInterval(updateClock, 1000);
 }
 
@@ -23,11 +22,7 @@ function updateClock() {
   var currentTime = new Date();
   var timeString = currentTime.toLocaleTimeString();
 
-  // Add CSS styles to clockElement
   clockElement.style.color = 'white';
-
-  // Append "Uhr" to timeString
   timeString = 'Time: ' + timeString;
-
   clockElement.textContent = timeString;
 }
