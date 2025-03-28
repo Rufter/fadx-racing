@@ -15,7 +15,7 @@ function addDropdownMenu() {
   const dropdownContent = `
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navBarSocialsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img src="https://fadx-racing.de/script/svg/discord.svg" alt="">
+        <img src="https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/discord.svg" alt="">
       </a>
       <div class="dropdown-menu" aria-labelledby="navBarSocialsDropdown">
         <a class="dropdown-item discord" href="https://discord.gg/aYgzAxj3Hv" target="_blank">Join our Discord</a>
