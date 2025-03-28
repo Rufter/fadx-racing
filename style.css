@@ -1,0 +1,172 @@
+/* Main Layout Styles
+-------------------------------------------------- */
+body {
+    background: #222222 url() 50% 50% no-repeat fixed;
+    background-size: cover;
+    font-family: 'Formula1 Display-Regular', sans-serif;
+    font-size: 95% !important;
+    letter-spacing: 0.0em;
+  }
+  
+  /* Navigation Bar Styles
+  -------------------------------------------------- */
+  .navbar {
+    animation: navbarReady 1ms; /* Ensures navbar is visible immediately */
+  }
+  
+  .navbar.bg-primary {
+    background: linear-gradient(269.94deg, #333333 0%, #2C3E50 70%);
+    border-image: linear-gradient(269.94deg, #9B59B6 0%, #34495E 70%) 1;
+    opacity: 0.96;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .navbar-container {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  /* Navbar Brand/Logo */
+  .navbar-brand {
+    background: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/fadxlogo1.png) no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 40px;
+    font-size: 0;
+    filter: invert(0);
+    transition: 1.5s;
+  }
+  
+  .navbar-brand:hover {
+    filter: invert(1);
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  /* Navbar Toggler */
+  .navbar-dark .navbar-toggler-icon {
+    filter: brightness(1) !important;
+    background-image: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/menu.svg);
+  }
+  
+  /* Dropdown Menu Styles
+  -------------------------------------------------- */
+  .navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+    overflow-y: auto;
+  }
+  
+  .dropdown-menu {
+    font-size: 0.95rem;
+    border: 1px solid #333333;
+    border-radius: 0;
+    border-width: 0 0 4px 0;
+    padding: 0;
+  }
+  
+  .dropdown-header {
+    padding-left: 6px;
+  }
+  
+  .dropdown-item {
+    color: white;
+    font-weight: 500;
+    padding: 0.45rem 1.5rem;
+  }
+  
+  .dropdown-divider {
+    margin: 0;
+    border-top: 1px solid #333333;
+  }
+  
+  .dropdown-menu.show .dropdown-item {
+    animation: slideOut 300ms cubic-bezier(0.08, 0.82, 0.17, 1);
+    transform-origin: top center;
+  }
+  
+  /* Button Styles
+  -------------------------------------------------- */
+  .btn, button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    color: black !important;
+    cursor: pointer;
+  }
+  
+  .btn {
+    white-space: nowrap;
+  }
+  
+  /* Additional Styles
+  -------------------------------------------------- */
+  a.card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .multiserver-dropdown {
+    width: 450px;
+    max-height: 800px;
+  }
+  
+  .multiserver-dropdown .multiserver {
+    height: 90px;
+  }
+  
+  #road-temp-text, #ambient-temp-text {
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 9px;
+    color: black;
+  }
+  
+  #road-temp-text {
+    margin: 11px;
+    margin-top: 22px;
+  }
+  
+  #ambient-temp-text {
+    margin: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Animations
+  -------------------------------------------------- */
+  @keyframes navbarReady {
+    from { opacity: 1; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideOut {
+    0% { padding: 0.3rem 1.5rem; }
+    100% { padding: 0.45rem 1.5rem; }
+  }
+  
+  /* Font Import
+  -------------------------------------------------- */
+  @font-face {
+    font-family: "Formula1 Display-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot");
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
+  }
