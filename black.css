@@ -39,7 +39,7 @@ body {
 
 /* Navbar Brand/Logo */
 .navbar-brand {
-  background: url(https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/fadxlogo1.png) no-repeat;
+  background: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/fadxlogo1.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: 40px;
@@ -65,7 +65,7 @@ body {
 /* Navbar Toggler */
 .navbar-dark .navbar-toggler-icon {
   filter: brightness(1) !important;
-  background-image: url(https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/menu.svg);
+  background-image: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/menu.svg);
 }
 
 /* Dropdown Menu Styles
@@ -164,9 +164,9 @@ a.card h3 {
 -------------------------------------------------- */
 @font-face {
   font-family: "Formula1 Display-Regular";
-  src: url("https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/7a45cffcf1eee0797d566deb425ebaa9.eot");
-  src: url("https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
-       url("https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
-       url("https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
-       url("https://pub-0b991c5d23d149bda0f6797acdcaee6c.r2.dev/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
+  src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot");
+  src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
+       url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
+       url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
+       url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
 }
