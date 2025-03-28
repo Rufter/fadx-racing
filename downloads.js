@@ -13,7 +13,7 @@ function addDropdownMenus() {
   const resourcesDropdownContent = `
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navBarResourcesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img src="https://fadx-racing.de/script/svg/download.svg" alt="">
+        <img src="https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/download.svg" alt="">
       </a>
       <div class="dropdown-menu" aria-labelledby="navBarResourcesDropdown">
         <a class="dropdown-item" href="/tracks">Tracks</a>
