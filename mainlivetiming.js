@@ -8,13 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const playersElement = serverElement.querySelector('.players');
         if (playersElement) {
-            // Speichere den Textinhalt der Elemente 'players' und leere sie
             const playersOnline = playersElement.textContent.trim();
             playersElement.innerHTML = '';
-
-            // Füge zuerst den Link und dann den Text für die Spieleranzahl hinzu
             playersElement.appendChild(link);
-            playersElement.appendChild(document.createElement('br')); // Füge eine Zeilenumbruch hinzu
+            playersElement.appendChild(document.createElement('br'));
             playersElement.appendChild(document.createTextNode(playersOnline));
         }
     });
