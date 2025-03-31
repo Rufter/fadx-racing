@@ -4,17 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     style.textContent = `
         .multiserver-dropdown .multiserver {
             height: 90px;
-            background-color: #f0f0f0;
-            margin: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-        .multiserver a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .multiserver a:hover {
-            text-decoration: underline;
         }
     `;
     document.head.appendChild(style);
