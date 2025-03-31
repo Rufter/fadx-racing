@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Dynamisch CSS hinzufügen
     const style = document.createElement('style');
     style.textContent = `
         .multiserver-dropdown .multiserver {
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     document.head.appendChild(style);
 
-    // Funktion zum Hinzufügen von Links und Spieleranzahl
     const multiServerElements = document.querySelectorAll('.multiserver');
     multiServerElements.forEach(function(serverElement, index) {
         const serverNumber = index;
