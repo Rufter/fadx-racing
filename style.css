@@ -1,27 +1,76 @@
-/* Main Layout Styles
--------------------------------------------------- */
-body {
-    background: #222222 url() 50% 50% no-repeat fixed;
-    background-size: cover;
+/* 
+  Author: Robert Kröger (alias Rufter)
+  Administrator: FADX-Racing
+  Website: https://fadx-racing.de
+  Discord: https://discord.gg/aYgzAxj3Hv
+
+  -------------------------------------------------------------------
+  Global CSS Styles for FADX-Racing Website and Assetto Corsa Server Manager
+  This stylesheet consolidates layout, typography, navbar, dropdown, button, and additional styles.
+  All original rules are preserved and documented in English.
+  -------------------------------------------------------------------
+*/
+
+/* 
+   Font Import
+   --------------------------------------------------
+   Import custom font "Formula1 Display-Regular" for use throughout the site.
+*/
+@font-face {
+    font-family: "Formula1 Display-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot");
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
+}
+
+
+/* 
+   Global Typography
+   --------------------------------------------------
+   Apply consistent typography settings for body and table body (tbody).
+*/
+body,
+tbody {
     font-family: 'Formula1 Display-Regular', sans-serif;
     font-size: 95% !important;
     letter-spacing: 0.0em;
-  }
-  
-  /* Navigation Bar Styles
-  -------------------------------------------------- */
-  .navbar {
-    animation: navbarReady 1ms; /* Ensures navbar is visible immediately */
-  }
-  
-  .navbar.bg-primary {
+}
+
+
+/* 
+   Main Layout Styles
+   --------------------------------------------------
+   Set the overall page background and layout properties.
+*/
+body {
+    /* Background setup: dark base color with fixed positioning and cover scaling */
+    background: #222222 url() 50% 50% no-repeat fixed;
+    background-size: cover;
+}
+
+
+/* 
+   Navigation Bar Styles
+   --------------------------------------------------
+   Styling for the navbar, including animation, gradients, and responsive container.
+*/
+.navbar {
+    /* Minimal animation to ensure immediate visibility */
+    animation: navbarReady 1ms;
+}
+
+.navbar.bg-primary {
+    /* Gradient background with a border image and slight opacity for modern appearance */
     background: linear-gradient(269.94deg, #333333 0%, #2C3E50 70%);
     border-image: linear-gradient(269.94deg, #9B59B6 0%, #34495E 70%) 1;
     opacity: 0.96;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-container {
+}
+
+.navbar-container {
+    /* Full-width container with horizontal padding and flexbox alignment */
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -29,16 +78,22 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  @media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 992px) {
     .navbar-container {
-      flex-wrap: nowrap;
+        /* Disable wrapping on larger screens */
+        flex-wrap: nowrap;
     }
-  }
-  
-  /* Navbar Brand/Logo */
-  .navbar-brand {
+}
+
+
+/* 
+   Navbar Brand/Logo
+   --------------------------------------------------
+   Styling for the website logo with background image and hover inversion effect.
+*/
+.navbar-brand {
     background: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/fadxlogo1.png) no-repeat;
     background-size: contain;
     width: 200px;
@@ -46,127 +101,173 @@ body {
     font-size: 0;
     filter: invert(0);
     transition: 1.5s;
-  }
-  
-  .navbar-brand:hover {
+}
+
+.navbar-brand:hover {
+    /* Invert the logo colors on hover */
     filter: invert(1);
-  }
-  
-  /* Navbar Links */
-  .nav-link {
+}
+
+
+/* 
+   Navbar Links
+   --------------------------------------------------
+   Define styles for navigation links to maintain consistency and readability.
+*/
+.nav-link {
     font-weight: 400;
     white-space: nowrap;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    /* Text color for dark-themed navbar links */
     color: white;
-  }
-  
-  /* Navbar Toggler */
-  .navbar-dark .navbar-toggler-icon {
+}
+
+
+/* 
+   Navbar Toggler Icon
+   --------------------------------------------------
+   Custom styles for the navbar toggler icon, including brightness filter and custom icon.
+*/
+.navbar-dark .navbar-toggler-icon {
     filter: brightness(1) !important;
     background-image: url(https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/menu.svg);
-  }
-  
-  /* Dropdown Menu Styles
-  -------------------------------------------------- */
-  .navbar-nav .dropdown-menu {
+}
+
+
+/* 
+   Dropdown Menu Styles
+   --------------------------------------------------
+   Define styles for dropdown menus, including alignment, overflow behavior, and animations.
+*/
+.navbar-nav .dropdown-menu {
     right: 0;
     left: auto;
     overflow-y: auto;
-  }
-  
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     font-size: 0.95rem;
     border: 1px solid #333333;
     border-radius: 0;
     border-width: 0 0 4px 0;
     padding: 0;
-  }
-  
-  .dropdown-header {
+}
+
+.dropdown-header {
+    /* Padding for dropdown headers */
     padding-left: 6px;
-  }
-  
-  .dropdown-item {
+}
+
+.dropdown-item {
+    /* Styling for dropdown items */
     color: white;
     font-weight: 500;
     padding: 0.45rem 1.5rem;
-  }
-  
-  .dropdown-divider {
+}
+
+.dropdown-divider {
+    /* Divider styling in dropdown menus */
     margin: 0;
     border-top: 1px solid #333333;
-  }
-  
-  .dropdown-menu.show .dropdown-item {
+}
+
+.dropdown-menu.show .dropdown-item {
+    /* Animation for dropdown items when menu is shown */
     animation: slideOut 300ms cubic-bezier(0.08, 0.82, 0.17, 1);
     transform-origin: top center;
-  }
-  
-  /* Button Styles
-  -------------------------------------------------- */
-  .btn, button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+}
+
+
+/* 
+   Button Styles
+   --------------------------------------------------
+   Standardize appearance and behavior of buttons and similar interactive elements.
+*/
+.btn,
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
     color: black !important;
     cursor: pointer;
-  }
-  
-  .btn {
+}
+
+.btn {
     white-space: nowrap;
-  }
-  
-  /* Additional Styles
-  -------------------------------------------------- */
-  a.card h3 {
+}
+
+
+/* 
+   Additional Component Styles
+   --------------------------------------------------
+   Additional styles for specific elements like cards, multiserver dropdowns, and temperature texts.
+*/
+
+/* Card Header Styling */
+a.card h3 {
     font-size: 1.4rem;
-  }
-  
-  .multiserver-dropdown {
+}
+
+/* Multiserver Dropdown Container */
+.multiserver-dropdown {
     width: 450px;
     max-height: 800px;
-  }
-  
-  .multiserver-dropdown .multiserver {
+}
+
+/* Multiserver Item within Dropdown */
+.multiserver-dropdown .multiserver {
     height: 90px;
-  }
-  
-  #road-temp-text, #ambient-temp-text {
+}
+
+/* Temperature Text Styling for Road and Ambient Temperatures */
+#road-temp-text,
+#ambient-temp-text {
     display: block;
     position: absolute;
     font-weight: bold;
     font-size: 9px;
     color: black;
-  }
-  
-  #road-temp-text {
+}
+
+#road-temp-text {
+    /* Specific margins for road temperature text */
     margin: 11px;
     margin-top: 22px;
-  }
-  
-  #ambient-temp-text {
+}
+
+#ambient-temp-text {
+    /* Specific margins for ambient temperature text */
     margin: 16px;
     margin-left: 10px;
-  }
-  
-  /* Animations
-  -------------------------------------------------- */
-  @keyframes navbarReady {
+}
+
+
+/* 
+   Animations
+   --------------------------------------------------
+   Keyframe animations for smooth UI transitions.
+*/
+@keyframes navbarReady {
     from { opacity: 1; }
     to { opacity: 1; }
-  }
-  
-  @keyframes slideOut {
+}
+
+@keyframes slideOut {
     0% { padding: 0.3rem 1.5rem; }
     100% { padding: 0.45rem 1.5rem; }
-  }
-  
-  /* Font Import
-  -------------------------------------------------- */
-  @font-face {
-    font-family: "Formula1 Display-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot");
-    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
-         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
-         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
-         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
-  }
+}
+
+
+/* 
+   Deprecated or Unused Styles (Commented Out)
+   --------------------------------------------------
+   The following rule is preserved as a comment for potential future use.
+*/
+/*
+.sidebar .nav-pills .nav-link.active {
+    background-color: #ffffff30;
+    color: #555;
+}
+*/
