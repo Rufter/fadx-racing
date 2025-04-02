@@ -1,1 +1,395 @@
+/* 
+  Author: Robert Kröger (alias Rufter)
+  Administrator: FADX-Racing
+  Website: https://fadx-racing.de
+  Discord: https://discord.gg/aYgzAxj3Hv
 
+  -------------------------------------------------------------------
+  Global CSS Styles for the FADX-Racing Website and Assetto Corsa Server Manager
+  This stylesheet consolidates layout, typography, navbar, dropdown, button,
+  and other styles. All original rules are preserved and documented.
+  -------------------------------------------------------------------
+*/
+
+/* 
+   Font Import
+   --------------------------------------------------
+   Import a custom font "Formula1 Display-Regular" to be used throughout the website.
+*/
+@font-face {
+    font-family: "Formula1 Display-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot");
+    src: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.eot?#iefix") format("embedded-opentype"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.woff") format("woff"),
+         url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/7a45cffcf1eee0797d566deb425ebaa9.ttf") format("truetype");
+}
+
+/* 
+   Global Typography
+   --------------------------------------------------
+   Define uniform typography for the body and table body.
+*/
+body,
+tbody {
+    font-family: 'Formula1 Display-Regular', sans-serif;
+    font-size: 95% !important;
+    letter-spacing: 0em;
+}
+
+/* 
+   Static Gradient Background from Left to Right
+   --------------------------------------------------
+   The background shows a subtle gradient: a darker greyish-blue on the left 
+   and a darker blue (#243B55) on the right.
+*/
+body {
+    margin: 0;
+    padding-top: 80px; /* Space reserved for fixed Navbar */
+    background: linear-gradient(to right, #707070, #243B55);
+    background-size: cover;
+    transition: background-color 0.5s ease;
+}
+
+/* 
+   Navigation Bar Styles
+   --------------------------------------------------
+   The navbar receives a static gradient, with a light shade (#99D6FF) on the left 
+   and a dark shade (#0066cc) on the right. It is full width, rounded, and has smooth transitions.
+*/
+.navbar {
+    animation: navbarReady 1ms;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    background: linear-gradient(to right, #99D6FF, #0066cc);
+    border-bottom: 2px solid #0057b3;
+    transition: background 0.5s, border-bottom 0.5s, box-shadow 0.5s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.navbar.bg-primary {
+    background: linear-gradient(to right, #99D6FF, #0066cc);
+    border: 2px solid #0057b3;
+    opacity: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container within the Navbar */
+.navbar-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-container {
+        flex-wrap: nowrap;
+    }
+}
+
+/* 
+   Navbar Brand/Logo with Pulsating Glow and Rotation Effects
+   --------------------------------------------------
+   The logo rotates and gains a glow effect on hover.
+*/
+.navbar-brand {
+    background: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/fadxlogo1.png") no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 40px;
+    font-size: 0;
+    filter: drop-shadow(0 0 0px #000);
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 10px;
+}
+
+.navbar-brand:hover {
+    transform: rotate(5deg) scale(1.05);
+    filter: drop-shadow(0 0 10px #007BFF);
+}
+
+/* 
+   Navigation Tabs (Nav-Links) – Override for Nav-Tabs
+   --------------------------------------------------
+   All nav-tabs receive a solid background and full opacity.
+   Non-active tabs are not transparent.
+*/
+.nav-tabs .nav-link {
+    background-color: #003366; /* Darker shade */
+    color: #fff;
+    border: 1px solid #002244;
+    border-radius: 10px 10px 0 0;
+    opacity: 1 !important;
+    margin-right: 2px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #002244;
+    transform: scale(1.05);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #002244;
+    color: #fff;
+    border-color: #002244;
+    opacity: 1 !important;
+}
+
+/* 
+   For nav-links that use icons (e.g., <i> elements),
+   apply a similar tile effect.
+*/
+.navbar .nav-link:not(.dropdown-toggle) > i {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+/* 
+   Navbar Toggler Icon
+   --------------------------------------------------
+   Applies a rotation effect on hover.
+*/
+.navbar-dark .navbar-toggler-icon {
+    filter: brightness(1) !important;
+    background-image: url("https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/menu.svg");
+    transition: transform 0.3s;
+}
+.navbar-dark .navbar-toggler-icon:hover {
+    transform: rotate(180deg);
+}
+
+/* 
+   Dropdown Menu Styles – Designed with a Bold Look
+   --------------------------------------------------
+   Dropdowns receive a strong static gradient, rounded corners, shadows,
+   and a thin border. The size adjusts automatically to the content (no overflow).
+*/
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+    overflow: visible;
+}
+
+.dropdown-menu {
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border-width: 0 0 4px 0;
+    padding: 0;
+    background: linear-gradient(to right, #222, #444);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-header {
+    padding-left: 6px;
+}
+
+.dropdown-item {
+    color: white;
+    font-weight: 500;
+    padding: 0.45rem 1.5rem;
+    transition: background 0.3s, padding 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 123, 255, 0.3);
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-divider {
+    margin: 0;
+    border-top: 1px solid #333333;
+}
+
+.dropdown-menu.show .dropdown-item {
+    animation: slideOut 300ms cubic-bezier(0.08, 0.82, 0.17, 1);
+    transform-origin: top center;
+}
+
+/* 
+   Multiserver Dropdown
+   --------------------------------------------------
+   Set the multiserver dropdown width to 400px.
+*/
+.multiserver-dropdown {
+    width: 400px;
+    max-height: 800px;
+    border-radius: 10px;
+}
+
+/* 
+   Button Styles with Rounded Corners and Modern Hover Effects
+   --------------------------------------------------
+   Buttons receive rounded corners, smooth transitions, and shadows on hover.
+*/
+.btn,
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    color: black !important;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn:hover,
+button:not(:disabled):hover,
+[type="button"]:not(:disabled):hover,
+[type="reset"]:not(:disabled):hover,
+[type="submit"]:not(:disabled):hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 
+   Table Styles
+   --------------------------------------------------
+   Tables are styled with a gentle dark blue-grey background (#2c3e50),
+   alternating row colors (odd: #2c3e50, even: #27343e), 
+   a smooth header gradient, and light shadows.
+*/
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #fff;
+    background: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.table thead {
+    background: linear-gradient(to right, #3a4f66, #2c3e50);
+    border-bottom: 2px solid #444;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #444;
+}
+
+.table thead th {
+    vertical-align: bottom;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background: #2c3e50;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background: #27343e;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* 
+   Card Styles
+   --------------------------------------------------
+   Cards are styled to match the overall design – with subtle colors, rounded corners,
+   and minimal hover effects that do not excessively increase contrast.
+*/
+.card {
+    background: #2c3e50;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* 
+   Card Header Styles
+   --------------------------------------------------
+   Card headers are styled with a matching color scheme, featuring a subtle gradient,
+   white text, and appropriate padding.
+*/
+.card-header {
+    background: linear-gradient(to right, #3a4f66, #2c3e50);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #444;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* 
+   Additional Effects Outside the Navbar
+   --------------------------------------------------
+   Additional modern effects for links, images, and other elements.
+*/
+
+/* Images receive a slight hover scaling effect */
+.img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.img-fluid:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* General links receive smooth color changes and scaling on hover */
+a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #66A3FF;
+}
+
+a:hover {
+    color: #99CCFF;
+    transform: scale(1.02);
+}
+
+/* 
+   Animations
+   --------------------------------------------------
+   Keyframe animations for smooth UI transitions.
+*/
+@keyframes navbarReady {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+@keyframes slideOut {
+    0% { padding: 0.3rem 1.5rem; }
+    100% { padding: 0.45rem 1.5rem; }
+}
+
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 
+   (Optional) Additional global styles can be added here,
+   for instance to implement scroll animations or other interactions.
+*/
