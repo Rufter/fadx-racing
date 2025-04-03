@@ -330,10 +330,10 @@ button:not(:disabled):hover,
     overflow: visible; 
 }
 
-.card-body {
+/*.card-body {
     overflow: visible !important;
 }
-
+*/
 /* 
    Card Header Styles
    --------------------------------------------------
