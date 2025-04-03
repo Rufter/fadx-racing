@@ -51,6 +51,9 @@ body {
     transition: background-color 0.5s ease;
 }
 
+#chat-container {
+  max-height: 200px;
+}
 /* 
    Navigation Bar Styles
    --------------------------------------------------
@@ -401,6 +404,3 @@ a:hover {
    (Optional) Additional global styles can be added here,
    for instance to implement scroll animations or other interactions.
 */
-#chat-container {
-  max-height: 200px;
-}
