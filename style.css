@@ -192,6 +192,8 @@ body {
     background: linear-gradient(to right, #222, #444);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999 !important; 
 }
 
 .dropdown-menu.show {
@@ -263,6 +265,13 @@ button:not(:disabled):hover,
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.svg-inline--fa {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
+}
+
 /* 
    Table Styles
    --------------------------------------------------
@@ -311,19 +320,18 @@ button:not(:disabled):hover,
 /* 
    Card Styles
    --------------------------------------------------
-   Cards are styled to match the overall design – with subtle colors, rounded corners,
-   and minimal hover effects that do not excessively increase contrast.
+   Cards are styled to match the overall design – with subtle colors and rounded corners.
+   Anpassung: Hover- und Transform-Effekte entfernt.
 */
 .card {
     background: #2c3e50;
     border: none;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: visible; 
 }
 
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+.card-body {
+    overflow: visible !important;
 }
 
 /* 
