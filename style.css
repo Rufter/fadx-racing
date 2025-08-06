@@ -359,7 +359,7 @@ button:not(:disabled):hover,
 */
 
 /* Images receive a slight hover scaling effect */
-.img-fluid {
+/*.img-fluid {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
@@ -367,7 +367,7 @@ button:not(:disabled):hover,
 .img-fluid:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
+}*/
 
 /* General links receive smooth color changes and scaling on hover */
 a {
