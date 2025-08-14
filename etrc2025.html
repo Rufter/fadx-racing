@@ -1,0 +1,968 @@
+<style>
+    table {
+        width: 20%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .note {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    /* Tabelle grundlegend */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        overflow-x: auto;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .note {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    /* Responsives Bild */
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Tabelle in Container für horizontales Scrollen auf Mobilgeräten */
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        table {
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+    }
+</style>
+
+<i>
+    <h1>
+        <div style="text-align: center;">
+            <span style="font-size: 2.1875rem; letter-spacing: 0em;">FADX-Racing</span>
+        </div>
+        <div style="text-align: center;">
+            <span style="font-size: 2.1875rem; letter-spacing: 0em;">European Truck Racing Championship IV 2025</span>
+        </div>
+    </h1>
+    <h1 style="text-align: center;">
+        <img src="https://cdn.jsdelivr.net/gh/Rufter/fadx-racing@main/ETRC_2025_Promo.png" class="responsive-image"><br>
+    </h1>
+</i>
+<br>
+
+
+<center>
+    <label for="languageSelect" style="color: red;"><b>Important: please read carefully</b></label><br>
+    <select id="languageSelect">
+        <option value="spoiler0">select your language</option>
+        <option value="spoiler1">Deutsche Version</option>
+        <option value="spoiler2">English version</option>
+        <option value="spoiler3">Magyar verzió</option>
+        <option value="spoiler4">Versión en español</option>
+        <option value="spoiler5">Version française</option>
+        <option value="spoiler6">Nederlandse versie</option>
+    </select>
+</center>
+<br>
+
+<!-- Deutsche Version -->
+<div id="spoiler1" class="spoiler-content" style="display: none;">
+
+    <b>Termine</b><br>
+    <p class="note">
+        Die unten stehenden Zeitpunkte (Qualifying-Start) werden automatisch in Ihrer lokalen Uhrzeit angezeigt.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Session</b>
+    <ul>
+        <li><b><i>Qualifikation:</i></b> 20 Minuten</li>
+        <li><b><i>Rennen 1:</i></b> 1 Runde Einführungsrunde + min. 45 KM + 1 Runde</li>
+        <li><b><i>Rennen 2:</i></b> 1 Runde Einführungsrunde + min. 45 KM + 1 Runde</li>
+    </ul>
+
+    <b>Besonderheiten</b>
+    <ul>
+        <li>Tempolimit von 160 KM/H</li>
+        <li>Reversed Grid der ersten 8 aus Rennen 1 in Rennen 2</li>
+        <li>Fliegender Start</li>
+        <li>Schaden 50 %</li>
+        <li>Reifenverschleiß 100 %</li>
+        <li>Während Rennen 1 &amp; Rennen 2 ist Tanken und Reifenwechsel nicht erlaubt. Reparatur jedoch schon.</li>
+    </ul>
+
+    <b>Renndistanz Rennen 1 &amp; Rennen 2</b><br>
+    1 Runde Einführungsrunde + min. 45 KM + 1 Runde<br><br>
+
+    <b>Punkteverteilung</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Platz</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Punkte</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    Die Punkte werden von Rennen 1 und Rennen 2 am Ende der Session zusammengerechnet und die Ergebnisse unter folgendem Link
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>
+    zur Verfügung gestellt.<br><br>
+
+    <b>Training und Live Timings</b><br>
+    Der Server wird für Trainings immer offen sein. Jeder darf so oft und so viel er will, bis zum Qualifying eines Renntages trainieren. 
+    Ausnahmen können Wartungsarbeiten am Server und Updates der Serversoftware sein.<br>
+    Die Live-Timing-Seite ist für jeden zugänglich und einsehbar. Rundenzeiten werden hier gespeichert und sind unter folgendem Link verfügbar:<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Fahrzeuge, Skins und Strecken</b><br>
+    Fahrzeuge, Skins und Strecken werden über den „Install Missing Content“-Button und das Assetto Corsa Sync Tool zur Verfügung gestellt.<br>
+    Skins und Skinupdates bitte nur noch über den Skin-Uploader einreichen. (Siehe Apps &amp; Software)<br><br>
+
+    <b>FADX-Racing Sync Tool</b>
+    <ul>
+        <li>FADX-Racing bietet sein selbst entwickeltes Tool zum Synchronisieren der Fahrzeuge, Skins und Strecken an.</li>
+        <li>Mit nur wenigen Klicks ist es möglich, immer auf dem neuesten Stand zu sein.</li>
+        <li>Es wird empfohlen, vor jedem Qualifying zu synchronisieren.</li>
+        <li>Mehr Informationen und Support im Discord:
+            <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">
+            FADX-Racing Sync Tool Discord</a>
+        </li>
+    </ul>
+
+    <b>Apps &amp; Software</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 oder höher</li>
+        <li>Assetto Corsa Content Manager (empfohlen)</li>
+        <li>Assetto Corsa Sync Tool (empfohlen)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Mit diesem kann man seinen Skin hochladen und auch updaten.</li>
+    </ul>
+
+    <b>Speicherung von personenbezogenen Daten</b><br>
+    Personenbezogene Daten wie SteamID, Fahrername, IP-Adressen, Rundenzeiten etc. werden auf dem
+    Server mit der IP-Adresse 213.165.76.10 gespeichert. Beim Betreten bzw. beim Joinen eines FADX-Racing
+    Assetto Corsa Servers sowie bei der Registrierung zur Championship erklärt man sich mit der Speicherung
+    dieser einverstanden. Eine Löschung vereinzelter Daten ist aus technischen Gründen nicht möglich.<br><br>
+
+    <h2>Reglement</h2>
+    <b>Vorwort</b><br>
+    Wir versuchen immer mit so wenig Regeln wie möglich auszukommen. Doch ganz ohne geht es nicht.<br>
+    Nicht geschriebene einfache Regeln, die soweit logisch oder allgemein im (virtuellen) Rennsport bekannt sind,
+    finden trotzdem Anwendung. Wie z. B. bei blauer Flagge überholen lassen oder bei Benutzung von „Back to Pits“
+    während Rennen 1 und 2 geht es nicht mehr zurück auf die Strecke.<br><br>
+
+    <p>FADX-Racing ist kein professioneller Verein oder Veranstalter. Die Meisterschaften, die wir anbieten,
+    veranstalten wir aus Leidenschaft zum SimRacing und betreiben diese als Hobby. Wir legen Wert darauf,
+    dass unsere Meisterschaften und Events in einer informellen Atmosphäre stattfinden und die Teilnahme
+    in der Regel kostenlos ist. Als nicht-professioneller Veranstalter können Admins, Rennleitung oder
+    Rennkommission gelegentlich Fehler machen, Fehlentscheidungen treffen oder negative Situationen übersehen.
+    Dennoch bemühen wir uns stets nach bestem Wissen und Gewissen, solche Vorkommnisse zu analysieren
+    und angemessen darauf zu reagieren. Unsere Hauptmotivation liegt darin, Spaß und Freude am SimRacing
+    für jedermann zu ermöglichen und gemeinsam unvergessliche Rennen zu erleben.</p>
+
+    <b>FADX-Racing Kodex</b>
+    <ul>
+        <li>Verhalte dich fair dir und den anderen gegenüber.</li>
+        <li>Befolge die Regeln.</li>
+        <li>Jeder hat das Recht, sich nach dem Rennen in der Analyse einer Situation zu melden. Es
+            wird dann gemeinsam geschaut, ob es sich um Absicht, Fahrfehler oder einen normalen
+            Zweikampf handelt.</li>
+    </ul>
+
+    <b>Boxenstopp</b>
+    <ul>
+        <li>KEIN Pflichtboxenstopp.</li>
+        <li>Während Rennen 1 &amp; Rennen 2 ist Tanken und Reifenwechsel nicht erlaubt. Reparatur jedoch schon.</li>
+    </ul>
+
+    <b>Fliegender Start und Einführungsrunde</b>
+    <ul>
+        <li>FADX-Racing hat sich diesmal dazu entschieden, die Einführungsrunde ohne Pace-Truck durchzuführen.</li>
+        <li>P1 hat das Privileg, das Fahrerfeld in der Einführungsrunde anzuführen, nachdem die roten Ampeln erloschen sind.</li>
+        <li>Während der Einführungsrunde gilt ein Tempolimit von 80 km/h und ein Überholverbot (FCY).</li>
+        <li>Das Tempolimit darf kurzzeitig überschritten werden, um auf den Vorausfahrenden aufzuschließen.</li>
+        <li>Wer links platziert ist, hält sich links und hinter seinem Vorausfahrenden.</li>
+        <li>Wer rechts platziert ist, hält sich rechts und hinter seinem Vorausfahrenden.</li>
+        <li>Nach der letzten Kurve in der Einführungsrunde ist das Tempolimit aufgehoben und das Überholverbot ab Start-Ziellinie aufgehoben.</li>
+    </ul>
+
+    <b>Massencrash</b>
+    <ul>
+        <li>Bei einem Massencrash in der ersten Runde nach der Einführungsrunde, bei dem mindestens 5 Fahrer beteiligt sind, wird der Start wiederholt (Red Flag).</li>
+        <li>Ein wiederholter Rennstart beginnt mit der Einführungsrunde.</li>
+        <li>Das Melden eines Massencrash kann und sollte im Discord Voice Channel sofort gemeldet werden. Die Admins sind dort anwesend.</li>
+    </ul>
+
+    <b>Unfall / Situation / Protest melden</b>
+    <ul>
+        <li>Melde einen Unfall, eine Situation oder einen Protest nach dem Rennen im dafür vorgesehenen Discord-Forum „report an incident“.</li>
+        <li>Erstelle je Incident einen neuen Post und lasse uns so viele Informationen wie möglich zukommen.</li>
+    </ul>
+
+    <b>Penaltys</b><br>
+    Nach Abschluss eines Rennens analysiert und bewertet das Team gemeldete Incidents. Dabei werden auch 
+    Fälle von unfairer Fahrweise untersucht und entsprechend bestraft. Die Strafen können von Punktabzug bis 
+    hin zur Disqualifikation reichen und variieren je nach Schwere des Vergehens. Jeder Vorfall wird 
+    gründlich überprüft, um eine gerechte und angemessene Reaktion zu gewährleisten. Die Analyse und 
+    Bestrafung von Verstößen ist ein wichtiger Bestandteil des Renngeschehens, um Fairness und 
+    Wettbewerbsintegrität zu gewährleisten.<br><br>
+
+    <b>Abschluss</b><br>
+    Es ist möglich, dass sich die Regeln während der Meisterschaft ändern, angepasst oder weitere hinzukommen. 
+    Wir werden dann so schnell wie möglich im entsprechenden Discord-Kanal darüber informieren.<br><br><br>
+
+</div>
+
+<!-- English version -->
+<div id="spoiler2" class="spoiler-content" style="display: none;">
+
+    <b>Schedule</b><br>
+    <p class="note">
+        The times below (qualifying start) are displayed automatically in your local time.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Session</b>
+    <ul>
+        <li><b><i>Qualifying:</i></b> 20 minutes</li>
+        <li><b><i>Race 1:</i></b> 1 lap formation + min. 45 KM + 1 lap</li>
+        <li><b><i>Race 2:</i></b> 1 lap formation + min. 45 KM + 1 lap</li>
+    </ul>
+
+    <b>Special Features</b>
+    <ul>
+        <li>Speed limit of 160 KM/H</li>
+        <li>Reversed grid of the first 8 from Race 1 in Race 2</li>
+        <li>Rolling start</li>
+        <li>Damage set to 50 %</li>
+        <li>Tire wear set to 100 %</li>
+        <li>No refueling or tire change allowed during Race 1 &amp; Race 2. Repairs are allowed.</li>
+    </ul>
+
+    <b>Race Distance for Race 1 &amp; Race 2</b><br>
+    1 lap formation + min. 45 KM + 1 lap<br><br>
+
+    <b>Points Distribution</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Points</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    The points from Race 1 and Race 2 will be added up at the end of the session, and the results will be available at the following link: 
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>.<br><br>
+
+    <b>Training and Live Timings</b><br>
+    The server will always be open for practice sessions. Participants can train as much as they want until the qualifying session on a race day. Exceptions may include server maintenance and software updates.<br>
+    The live timing page is accessible to everyone and displays lap times at:<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Cars, Skins and Tracks</b><br>
+    Cars, skins and tracks are provided via the “Install Missing Content” button and the Assetto Corsa Sync Tool.<br>
+    Skins and skin updates must now be submitted exclusively via the Skin Uploader. (See Apps &amp; Software)<br><br>
+
+    <b>Assetto Corsa Sync Tool</b>
+    <ul>
+        <li>FADX-Racing offers its proprietary tool for synchronizing cars, skins and tracks.</li>
+        <li>With just a few clicks, you can stay up to date at all times.</li>
+        <li>It is recommended to synchronize before each qualifying session.</li>
+        <li>More information and support on Discord: <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">Sync Tool Discord</a></li>
+    </ul>
+
+    <b>Apps &amp; Software</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 or higher</li>
+        <li>Assetto Corsa Content Manager (recommended)</li>
+        <li>Assetto Corsa Sync Tool (recommended)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Allows you to upload and update your skin.</li>
+    </ul>
+
+    <b>Storage of Personal Data</b><br>
+    Personal data such as SteamID, driver name, IP addresses, lap times, etc., are stored on the server with IP address 213.165.76.10. By joining a FADX-Racing Assetto Corsa server or registering for the championship, you agree to the storage of this data. Individual deletion is not possible for technical reasons.<br><br>
+
+    <h2>Regulations</h2>
+    <b>Preface</b><br>
+    We strive to have as few rules as possible, but it is not possible to have none at all.<br>
+    Unwritten simple rules that are logically or generally known in (virtual) racing still apply, such as yielding when shown a blue flag or not returning to the track after using “Back to Pits” during Race 1 and 2.<br><br>
+
+    <p>FADX-Racing is not a professional association or organizer. We organize the championships we offer out of passion for SimRacing and pursue them as a hobby. We value the informal atmosphere of our championships and events, and participation is typically free. As a non-professional organizer, admins, race directors, or race commissions may occasionally make mistakes, make wrong decisions, or overlook negative situations. However, we always strive to analyze such incidents and respond appropriately to the best of our knowledge and conscience. Our main motivation is to provide fun and enjoyment in SimRacing for everyone and to experience unforgettable races together.</p>
+
+    <b>FADX-Racing Code of Conduct</b>
+    <ul>
+        <li>Behave fairly towards yourself and others.</li>
+        <li>Follow the rules.</li>
+        <li>Everyone has the right to report a situation in the analysis after the race. It will then be determined whether it was intentional, a driving error, or a normal race incident.</li>
+    </ul>
+
+    <b>Pit Stop</b>
+    <ul>
+        <li>No mandatory pit stop.</li>
+        <li>No refueling or tire change allowed during Race 1 &amp; Race 2. Repairs are allowed.</li>
+    </ul>
+
+    <b>Rolling Start and Formation Lap</b>
+    <ul>
+        <li>FADX-Racing has decided this time to conduct the formation lap without a pace truck.</li>
+        <li>P1 has the privilege of leading the field during the formation lap after the red lights have gone out.</li>
+        <li>During the formation lap, there is a speed limit of 80 km/h and no overtaking (FCY).</li>
+        <li>The speed limit can be temporarily exceeded to catch up to the car ahead.</li>
+        <li>The left-side car stays left and behind the car ahead; the right-side car stays right and behind its car ahead.</li>
+        <li>After the last corner in the formation lap, the speed limit and no-overtaking rule are lifted at the start-finish line.</li>
+    </ul>
+
+    <b>Massive Crash</b>
+    <ul>
+        <li>In the event of a massive crash involving at least 5 drivers in the first lap after the formation lap, the start will be repeated (Red Flag).</li>
+        <li>A repeated race start begins with the formation lap.</li>
+        <li>Reporting a massive crash should be done immediately in the Discord voice channel. The admins are present there.</li>
+    </ul>
+
+    <b>Reporting an Accident / Incident / Protest</b>
+    <ul>
+        <li>Report an accident, situation, or protest after the race in the designated Discord forum “report an incident.”</li>
+        <li>Create a new post for each incident and provide as much information as possible.</li>
+    </ul>
+
+    <b>Penalties</b><br>
+    After each race, the team analyzes and evaluates reported incidents. Cases of unfair driving are investigated and appropriately penalized. Penalties can range from point deductions to disqualification, depending on the severity of the offense. Each incident is thoroughly reviewed to ensure a fair and appropriate response. The analysis and sanctioning of infractions is an essential part of the racing process to guarantee fairness and competitive integrity.<br><br>
+
+    <b>Conclusion</b><br>
+    Rules may change, be adjusted, or additional ones may be added during the championship. In that case, we will inform you as soon as possible via the appropriate Discord channel.<br><br><br>
+
+</div>
+
+<!-- Magyar verzió -->
+<div id="spoiler3" class="spoiler-content" style="display: none;">
+
+    <b>Időpontok</b><br>
+    <p class="note">
+        A lenti időpontok (kvalifikáció kezdete) automatikusan a helyi időzónádban jelennek meg.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Munkamenet</b>
+    <ul>
+        <li><b><i>Kvalifikáció:</i></b> 20 perc</li>
+        <li><b><i>Verseny 1:</i></b> 1 felvezető kör + min. 45 KM + 1 kör</li>
+        <li><b><i>Verseny 2:</i></b> 1 felvezető kör + min. 45 KM + 1 kör</li>
+    </ul>
+
+    <b>Különlegességek</b>
+    <ul>
+        <li>160 km/h sebességhatár</li>
+        <li>Az első 8 helyezett fordított rajtrácsa az 1. verseny után a 2. versenyben</li>
+        <li>Folyamatos start</li>
+        <li>Sebzés 50 %</li>
+        <li>Gumikopás 100 %</li>
+        <li>Az 1. és 2. verseny során tankolás és kerékcsere nem engedélyezett. Javítás viszont igen.</li>
+    </ul>
+
+    <b>Versenytávolság az 1. és 2. versenyben</b><br>
+    1 felvezető kör + min. 45 KM + 1 kör<br><br>
+
+    <b>Ponteloszlás</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Hely</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pontok</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    Az 1. és 2. verseny pontjait összeadják a munkamenet végén, és az eredmények a következő linken érhetők el:<br>
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>.<br><br>
+
+    <b>Edzés és élő időmérések</b><br>
+    A szerver mindig nyitva áll edzésekhez. Mindenki olyan sokat és olyan gyakran edzhet, amennyit csak akar, a versenynap kvalifikációjáig. 
+    Kivételek lehetnek a szerver karbantartása és a szerver szoftverének frissítései.<br>
+    Az élő időmérő oldal mindenki számára elérhető és megtekinthető. Itt tárolják a köridőket, és az alábbi linken érhetők el:<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Járművek, skinek és pályák</b><br>
+    A járműveket, skineket és pályákat az „Install Missing Content” gombon és az Assetto Corsa Sync Tool segítségével lehet beszerezni.<br>
+    A skineket és a skinfrissítéseket kérjük kizárólag a Skin-Uploaderen keresztül küldjék be. (Lásd Apps &amp; Software)<br><br>
+
+    <b>FADX-Racing Sync Tool</b>
+    <ul>
+        <li>A FADX-Racing saját fejlesztésű eszközt kínál a járművek, skinek és pályák szinkronizálására.</li>
+        <li>Néhány kattintással mindig naprakész lehetsz.</li>
+        <li>Ajánlott az összeszinkronizálás minden kvalifikáció előtt.</li>
+        <li>További információk és támogatás a Discordon:
+            <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">
+            FADX-Racing Sync Tool Discord</a>
+        </li>
+    </ul>
+
+    <b>Alkalmazások &amp; szoftver</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 vagy magasabb</li>
+        <li>Assetto Corsa Content Manager (ajánlott)</li>
+        <li>Assetto Corsa Sync Tool (ajánlott)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Ezzel feltöltheted és frissítheted a skineket.</li>
+    </ul>
+
+    <b>Személyes adatok tárolása</b><br>
+    Személyes adatokat, mint a SteamID, versenyzőnév, IP-címek, köridők stb. a 213.165.76.10 IP-című szerveren tároljuk. 
+    A FADX-Racing Assetto Corsa szerverre lépéssel vagy a bajnokságra való regisztrációval beleegyezel ezen adatok tárolásába. 
+    Egyes adatok törlése technikai okokból nem lehetséges.<br><br>
+
+    <h2>Szabályzat</h2>
+    <b>Előszó</b><br>
+    Mindig igyekszünk a lehető legkevesebb szabállyal dolgozni, de teljesen nélkülözni nem lehet őket.<br>
+    A le nem írt, de logikus vagy általánosan ismert (virtuális) motorsportban alkalmazott egyszerű szabályokat továbbra is be kell tartani. 
+    Például kék zászlónál kiengedni az előzést, vagy ha valaki használja a „Back to Pits”-et az 1. és 2. verseny alatt, nem térhet vissza a pályára.<br><br>
+
+    <p>Az FADX-Racing nem profi egyesület vagy szervező. A bajnokságokat, amelyeket kínálunk, a SimRacing iránti szenvedélyből rendezzük és hobbiként kezeljük. 
+    Fontos számunkra, hogy bajnokságaink és eseményeink informális légkörben zajlanak, és a részvétel általában ingyenes. 
+    Nem profi szervezőként az adminisztrátorok, versenyigazgatók vagy versenybizottság időnként hibázhatnak, rossz döntéseket hozhatnak vagy figyelmen kívül hagyhatnak negatív helyzeteket. 
+    Ennek ellenére mindig legjobb tudásunk és lelkiismeretünk szerint igyekszünk ezeket az eseteket elemezni és megfelelően reagálni rájuk. 
+    A fő motivációnk az, hogy mindenkinek felejthetetlen versenyeket és örömet nyújtsunk a SimRacingben.</p>
+
+    <b>FADX-Racing Kódex</b>
+    <ul>
+        <li>Viselkedj tisztességesen önmagaddal és másokkal szemben.</li>
+        <li>Kövesd a szabályokat.</li>
+        <li>Mindenkinek joga van az elemzés során a verseny után jelezni egy helyzetet. Ezután együtt
+            megvizsgáljuk, hogy szándékosságról, vezetési hibáról vagy normál küzdelemről van-e szó.</li>
+    </ul>
+
+    <b>Boxkiállás</b>
+    <ul>
+        <li>NINCS kötelező boxkiállás.</li>
+        <li>Az 1. és 2. verseny során tankolás és kerékcsere nem engedélyezett. Javítás azonban igen.</li>
+    </ul>
+
+    <b>Folyamatos rajt és felvezető kör</b>
+    <ul>
+        <li>A FADX-Racing ezúttal úgy döntött, hogy felvezető kört tart pace-truck nélkül.</li>
+        <li>A P1-nek kiváltsága van az élmezőny vezetésére a felvezető körben, miután a piros lámpák kialudtak.</li>
+        <li>A felvezető kör során 80 km/h sebességhatár és előzési tilalom (FCY) van érvényben.</li>
+        <li>A sebességhatár rövid ideig túlléphető, hogy felzárkózz a előtted haladóhoz.</li>
+        <li>Akik bal oldalon helyezkednek el, tartsák magukat balra és az előttük haladó mögött.</li>
+        <li>Akik jobbra helyezkednek el, tartsák magukat jobbra és az előttük haladó mögött.</li>
+        <li>Az utolsó kanyar után a felvezető körben a sebességhatár és előzési tilalom a célegyenes vonalánál megszűnik.</li>
+    </ul>
+
+    <b>Tömegbaleset</b>
+    <ul>
+        <li>Ha tömegbaleset történik az első körben a felvezető kör után, amelyben legalább 5 versenyző érintett, a rajtot megismétlik (Red Flag).</li>
+        <li>A megismételt versenystart a felvezető körrel kezdődik.</li>
+        <li>Egy tömegbaleset jelentését azonnal a Discord Voice Channelen kell bejelenteni. Az adminok ott jelen vannak.</li>
+    </ul>
+
+    <b>Baleset / Helyzet / Proteszt jelentése</b>
+    <ul>
+        <li>Jelents balesetet, helyzetet vagy tiltakozást a verseny után a kijelölt Discord fórumon „report an incident”.</li>
+        <li>Hozz létre minden egyes incidenshez új bejegyzést, és adj meg annyi információt, amennyit csak tudsz.</li>
+    </ul>
+
+    <b>Büntetések</b><br>
+    Egy verseny befejezése után a csapat elemzi és értékeli a jelentett incidenst. Ezután a sportszerűtlen vezetési eseteket is kivizsgálják és megfelelő szankciókkal sújtják. A büntetések pontlevonástól a kizárásig terjedhetnek, a szabálysértés súlyosságától függően. Minden esetet alaposan átvizsgálnak, hogy igazságos és megfelelő választ biztosítsanak. Az incidensek elemzése és szankcionálása a verseny integritásának és sportszerűségének biztosítása érdekében történik.<br><br>
+
+    <b>Zárszó</b><br>
+    Előfordulhat, hogy a bajnokság során a szabályok változnak, módosulnak vagy továbbiak kerülnek bevezetésre. Ebben az esetben a megfelelő Discord-csatornában a lehető leghamarabb tájékoztatunk.<br><br><br>
+
+</div>
+
+<!-- Versión en español -->
+<div id="spoiler4" class="spoiler-content" style="display: none;">
+
+    <b>Fechas</b><br>
+    <p class="note">
+        Los horarios a continuación (inicio de la clasificación) se muestran automáticamente en tu hora local.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Sesión</b>
+    <ul>
+        <li><b><i>Clasificación:</i></b> 20 minutos</li>
+        <li><b><i>Carrera 1:</i></b> 1 vuelta de formación + mín. 45 KM + 1 vuelta</li>
+        <li><b><i>Carrera 2:</i></b> 1 vuelta de formación + mín. 45 KM + 1 vuelta</li>
+    </ul>
+
+    <b>Características especiales</b>
+    <ul>
+        <li>Límite de velocidad de 160 KM/H</li>
+        <li>Parrilla invertida de los primeros 8 de la Carrera 1 en la Carrera 2</li>
+        <li>Salida lanzada</li>
+        <li>Daños al 50 %</li>
+        <li>Desgaste de neumáticos al 100 %</li>
+        <li>No se permite repostar ni cambiar neumáticos durante la Carrera 1 y la Carrera 2. Las reparaciones sí están permitidas.</li>
+    </ul>
+
+    <b>Distancia de carrera en la Carrera 1 y la Carrera 2</b><br>
+    1 vuelta de formación + mín. 45 KM + 1 vuelta<br><br>
+
+    <b>Distribución de puntos</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Posición</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Puntos</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    Los puntos de la Carrera 1 y la Carrera 2 se sumarán al final de la sesión y los resultados estarán disponibles en el siguiente enlace:<br>
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>.<br><br>
+
+    <b>Entrenamientos y tiempos en vivo</b><br>
+    El servidor estará siempre abierto para sesiones de práctica. Cualquier participante puede entrenar tanto y tan a menudo como quiera hasta la clasificación del día de la carrera. Las excepciones pueden incluir tareas de mantenimiento del servidor y actualizaciones del software del servidor.<br>
+    La página de cronometraje en vivo es accesible y visible para todos. Aquí se guardan los tiempos por vuelta y están disponibles en el siguiente enlace:<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Vehículos, skins y circuitos</b><br>
+    Los vehículos, skins y circuitos se proporcionan a través del botón «Install Missing Content» y la herramienta Assetto Corsa Sync Tool.<br>
+    Las skins y las actualizaciones de skins deben enviarse únicamente a través del Skin-Uploader. (Ver Apps &amp; Software)<br><br>
+
+    <b>Herramienta de sincronización FADX-Racing</b>
+    <ul>
+        <li>FADX-Racing ofrece su herramienta propietaria para sincronizar vehículos, skins y circuitos.</li>
+        <li>Con solo unos clics, es posible estar siempre al día.</li>
+        <li>Se recomienda sincronizar antes de cada clasificación.</li>
+        <li>Más información y soporte en Discord: <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">Discord de FADX-Racing Sync Tool</a></li>
+    </ul>
+
+    <b>Aplicaciones y software</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 o superior</li>
+        <li>Assetto Corsa Content Manager (recomendado)</li>
+        <li>Assetto Corsa Sync Tool (recomendado)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Con esto puedes subir y actualizar tu skin.</li>
+    </ul>
+
+    <b>Almacenamiento de datos personales</b><br>
+    Los datos personales como SteamID, nombre del piloto, direcciones IP, tiempos por vuelta, etc., se almacenan en el servidor con la dirección IP 213.165.76.10. Al unirte a un servidor de FADX-Racing Assetto Corsa o al registrarte para el campeonato, aceptas el almacenamiento de estos datos. La eliminación de datos individuales no es posible por razones técnicas.<br><br>
+
+    <h2>Reglamento</h2>
+    <b>Prefacio</b><br>
+    Intentamos siempre contar con la menor cantidad de reglas posible. Pero no se puede prescindir de ellas por completo.<br>
+    Las reglas simples no escritas, que son lógicas o generalmente conocidas en el automovilismo (virtual), siguen aplicándose, como ceder ante la bandera azul o no poder volver a la pista después de usar «Back to Pits» durante la Carrera 1 y 2.<br><br>
+
+    <p>FADX-Racing no es una asociación u organizador profesional. Los campeonatos que ofrecemos los organizamos por pasión al SimRacing y los tratamos como un hobby. Valoramos que nuestros campeonatos y eventos se lleven a cabo en un ambiente informal y que la participación sea normalmente gratuita. Como organizador no profesional, los administradores, la dirección de carrera o la comisión de carreras pueden ocasionalmente cometer errores, tomar decisiones equivocadas o pasar por alto situaciones negativas. Aun así, nos esforzamos siempre por analizar dichos incidentes y reaccionar adecuadamente con el mayor conocimiento y conciencia posible. Nuestra principal motivación es proporcionar diversión y alegría en el SimRacing para todos y vivir carreras inolvidables juntos.</p>
+
+    <b>Código de conducta de FADX-Racing</b>
+    <ul>
+        <li>Compórtate de manera justa contigo mismo y con los demás.</li>
+        <li>Sigue las reglas.</li>
+        <li>Todos tienen derecho a informar de una situación tras la carrera en el análisis. Luego se evaluará conjuntamente si fue intencionado, un error de conducción o un lance de carrera normal.</li>
+    </ul>
+
+    <b>Parada en boxes</b>
+    <ul>
+        <li>NO hay parada en boxes obligatoria.</li>
+        <li>No se permite repostar ni cambiar neumáticos durante la Carrera 1 y la Carrera 2. Sin embargo, las reparaciones sí están permitidas.</li>
+    </ul>
+
+    <b>Salida lanzada y vuelta de formación</b>
+    <ul>
+        <li>FADX-Racing ha decidido esta vez realizar la vuelta de formación sin pace truck.</li>
+        <li>El P1 tiene el privilegio de liderar el pelotón en la vuelta de formación una vez que se apagan las luces rojas.</li>
+        <li>Durante la vuelta de formación hay un límite de velocidad de 80 km/h y no adelantar (FCY).</li>
+        <li>El límite de velocidad se puede superar temporalmente para alcanzar al vehículo de delante.</li>
+        <li>Los que estén situados a la izquierda se mantendrán a la izquierda y detrás de su coche de delante.</li>
+        <li>Los que estén situados a la derecha se mantendrán a la derecha y detrás de su coche de delante.</li>
+        <li>Después de la última curva en la vuelta de formación se levanta el límite de velocidad y la prohibición de adelantar en la línea de meta.</li>
+    </ul>
+
+    <b>Choque masivo</b>
+    <ul>
+        <li>En caso de choque masivo en la primera vuelta después de la formación en el que participen al menos 5 pilotos, la salida se repetirá (bandera roja).</li>
+        <li>Una salida de carrera repetida comienza con la vuelta de formación.</li>
+        <li>La notificación de un choque masivo debe hacerse inmediatamente en el canal de voz de Discord. Los admins están allí presentes.</li>
+    </ul>
+
+    <b>Informar de un accidente / incidente / protesta</b>
+    <ul>
+        <li>Informar de un accidente, incidente o protesta después de la carrera en el foro de Discord designado „report an incident”.</li>
+        <li>Crear una nueva publicación por cada incidente y proporcionar la mayor cantidad de información posible.</li>
+    </ul>
+
+    <b>Penalizaciones</b><br>
+    Después de cada carrera, el equipo analiza y evalúa los incidentes reportados. También investigan los casos de conducción antideportiva y aplican sanciones correspondientes. Las penalizaciones pueden ir desde la resta de puntos hasta la descalificación, según la gravedad de la infracción. Cada incidente se revisa minuciosamente para garantizar una respuesta justa y adecuada. El análisis y sanción de infracciones es un componente clave para mantener la equidad e integridad de la competición.<br><br>
+
+    <b>Conclusión</b><br>
+    Es posible que las reglas cambien, se ajusten o se añadan durante el campeonato. En tal caso, informaremos lo antes posible en el canal de Discord correspondiente.<br><br><br>
+
+</div>
+
+<!-- Version française -->
+<div id="spoiler5" class="spoiler-content" style="display: none;">
+
+    <b>Dates</b><br>
+    <p class="note">
+        Les heures ci-dessous (début des qualifications) s'affichent automatiquement à votre heure locale.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Séance</b>
+    <ul>
+        <li><b><i>Qualifications :</i></b> 20 minutes</li>
+        <li><b><i>Course 1 :</i></b> 1 tour de formation + min. 45 KM + 1 tour</li>
+        <li><b><i>Course 2 :</i></b> 1 tour de formation + min. 45 KM + 1 tour</li>
+    </ul>
+
+    <b>Caractéristiques spéciales</b>
+    <ul>
+        <li>Limite de vitesse de 160 KM/h</li>
+        <li>Grille inversée des 8 premiers de la Course 1 en Course 2</li>
+        <li>Départ lancé</li>
+        <li>Dommages à 50 %</li>
+        <li>Usure des pneus à 100 %</li>
+        <li>Pas de ravitaillement ni de changement de pneus autorisé pendant la Course 1 et la Course 2. Les réparations sont cependant autorisées.</li>
+    </ul>
+
+    <b>Distance de course pour la Course 1 et la Course 2</b><br>
+    1 tour de formation + min. 45 KM + 1 tour<br><br>
+
+    <b>Répartition des points</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Points</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    Les points de la Course 1 et de la Course 2 seront additionnés à la fin de la séance, et les résultats seront disponibles via le lien suivant :<br>
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>.<br><br>
+
+    <b>Entraînements et chronométrage en direct</b><br>
+    Le serveur sera toujours ouvert pour les séances d'entraînement. Chacun peut s'entraîner autant et aussi longtemps qu'il le souhaite jusqu'aux qualifications d'un jour de course. Des exceptions peuvent inclure la maintenance du serveur et les mises à jour du logiciel serveur.<br>
+    La page de chronométrage en direct est accessible à tous. Les temps au tour y sont enregistrés et sont disponibles via le lien suivant :<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Voitures, skins et circuits</b><br>
+    Les voitures, skins et circuits sont disponibles via le bouton «Install Missing Content» et l'outil Assetto Corsa Sync Tool.<br>
+    Veuillez soumettre les skins et leurs mises à jour uniquement via le Skin Uploader. (Voir Apps &amp; Software)<br><br>
+
+    <b>Outil de synchronisation FADX-Racing</b>
+    <ul>
+        <li>FADX-Racing propose son outil propriétaire pour synchroniser voitures, skins et circuits.</li>
+        <li>En quelques clics, vous pouvez toujours être à jour.</li>
+        <li>Il est recommandé de synchroniser avant chaque séance de qualifications.</li>
+        <li>Plus d'informations et support sur Discord : <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">Discord FADX-Racing Sync Tool</a></li>
+    </ul>
+
+    <b>Applications &amp; logiciels</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 ou supérieur</li>
+        <li>Assetto Corsa Content Manager (recommandé)</li>
+        <li>Assetto Corsa Sync Tool (recommandé)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Avec ceci, vous pouvez télécharger et mettre à jour votre skin.</li>
+    </ul>
+
+    <b>Stockage des données personnelles</b><br>
+    Les données personnelles telles que SteamID, nom du pilote, adresses IP, temps au tour, etc., sont stockées sur le serveur dont l'adresse IP est 213.165.76.10. En rejoignant un serveur FADX-Racing Assetto Corsa ou en vous inscrivant au championnat, vous acceptez le stockage de ces données. La suppression de données individuelles n'est pas possible pour des raisons techniques.<br><br>
+
+    <h2>Règlement</h2>
+    <b>Préface</b><br>
+    Nous essayons toujours d'avoir le moins de règles possible, mais on ne peut pas s'en passer entièrement.<br>
+    Les règles simples non écrites, logiques ou généralement connues dans le sport automobile (virtuel), s'appliquent toujours. Par exemple, laisser passer avec un drapeau bleu ou qu'après avoir utilisé «Back to Pits» pendant la Course 1 et la Course 2, il n'est plus possible de revenir sur la piste.<br><br>
+
+    <p>FADX-Racing n’est pas une association ou un organisateur professionnel. Les championnats que nous proposons sont organisés par passion pour le SimRacing et sont gérés comme un hobby. Nous attachons de l’importance à ce que nos championnats et événements se déroulent dans une atmosphère informelle, et la participation est généralement gratuite. En tant qu’organisateur non professionnel, les admins, la direction de course ou la commission de course peuvent parfois commettre des erreurs, prendre de mauvaises décisions ou négliger des situations négatives. Néanmoins, nous nous efforçons toujours, de tout notre savoir et conscience, d’analyser ces incidents et d’y répondre de manière appropriée. Notre principale motivation est de permettre à chacun de prendre du plaisir et de la joie dans le SimRacing et de vivre des courses inoubliables ensemble.</p>
+
+    <b>Code de conduite FADX-Racing</b>
+    <ul>
+        <li>Comportez-vous équitablement envers vous-même et les autres.</li>
+        <li>Respectez les règles.</li>
+        <li>Chacun a le droit de signaler une situation lors de l'analyse après la course. On examinera ensuite ensemble s'il s'agissait d'une intention, d'une erreur de conduite ou d'un affrontement normal.</li>
+    </ul>
+
+    <b>Arrêt aux stands</b>
+    <ul>
+        <li>Pas d'arrêt aux stands obligatoire.</li>
+        <li>Pas de ravitaillement ni de changement de pneus autorisé pendant la Course 1 et la Course 2. Les réparations sont cependant autorisées.</li>
+    </ul>
+
+    <b>Départ lancé et tour de formation</b>
+    <ul>
+        <li>FADX-Racing a cette fois décidé d'effectuer le tour de formation sans pace truck.</li>
+        <li>P1 a le privilège de mener le peloton lors du tour de formation après l'extinction des feux rouges.</li>
+        <li>Pendant le tour de formation, la limite de vitesse est de 80 km/h et il est interdit de dépasser (FCY).</li>
+        <li>La limite de vitesse peut être dépassée temporairement pour rattraper la voiture de devant.</li>
+        <li>Ceux placés à gauche restent à gauche et derrière leur prédécesseur.</li>
+        <li>Ceux placés à droite restent à droite et derrière leur prédécesseur.</li>
+        <li>Après le dernier virage du tour de formation, la limite de vitesse et l'interdiction de dépassement sont levées à la ligne de départ-arrivée.</li>
+    </ul>
+
+    <b>Accident de masse</b>
+    <ul>
+        <li>En cas d'accident de masse au premier tour après le tour de formation impliquant au moins 5 pilotes, le départ est refait (drapeau rouge).</li>
+        <li>Un nouveau départ commence par le tour de formation.</li>
+        <li>Le signalement d'un accident de masse doit être fait immédiatement dans le canal vocal Discord. Les admins sont présents.</li>
+    </ul>
+
+    <b>Signaler un accident / incident / protestation</b>
+    <ul>
+        <li>Signalez un accident, une situation ou une protestation après la course dans le forum Discord dédié «report an incident».</li>
+        <li>Créez un nouveau post pour chaque incident et fournissez autant d'informations que possible.</li>
+    </ul>
+
+    <b>Pénalités</b><br>
+    Après chaque course, l'équipe analyse et évalue les incidents signalés. Les cas de conduite déloyale sont également examinés et sanctionnés en conséquence. Les pénalités peuvent aller de la déduction de points à la disqualification, selon la gravité de l'infraction. Chaque incident est minutieusement examiné pour assurer une réponse juste et appropriée. L'analyse et la sanction des infractions sont essentielles pour garantir l'équité et l'intégrité de la compétition.<br><br>
+
+    <b>Conclusion</b><br>
+    Il est possible que les règles évoluent, soient ajustées ou que d'autres soient ajoutées pendant le championnat. Dans ce cas, nous informerons le plus rapidement possible via le canal Discord approprié.<br><br><br>
+
+</div>
+
+<!-- Nederlandse versie -->
+<div id="spoiler6" class="spoiler-content" style="display: none;">
+
+    <b>Data</b><br>
+    <p class="note">
+        De onderstaande tijdstippen (start van de kwalificatie) worden automatisch in uw lokale tijd weergegeven.
+    </p>
+    <ul>
+        <li><time class="qual-time" datetime="2025-10-04T19:30:00+02:00">04.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-10-18T19:30:00+02:00">18.10.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-01T19:30:00+01:00">01.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-15T19:30:00+01:00">15.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-11-29T19:30:00+01:00">29.11.2025, 19:30</time></li>
+        <li><time class="qual-time" datetime="2025-12-13T19:30:00+01:00">13.12.2025, 19:30</time></li>
+    </ul>
+
+    <b>Sessie</b>
+    <ul>
+        <li><b><i>Kwalificatie:</i></b> 20 minuten</li>
+        <li><b><i>Race 1:</i></b> 1 formatieronde + min. 45 KM + 1 ronde</li>
+        <li><b><i>Race 2:</i></b> 1 formatieronde + min. 45 KM + 1 ronde</li>
+    </ul>
+
+    <b>Speciale kenmerken</b>
+    <ul>
+        <li>Snelheidslimiet van 160 KM/H</li>
+        <li>Omgekeerde startopstelling van de eerste 8 uit Race 1 in Race 2</li>
+        <li>Vliegende start</li>
+        <li>Schade 50 %</li>
+        <li>Banden slijtage 100 %</li>
+        <li>Tanken of banden wisselen niet toegestaan tijdens Race 1 en Race 2. Reparaties zijn wel toegestaan.</li>
+    </ul>
+
+    <b>Racedistance voor Race 1 en Race 2</b><br>
+    1 formatieronde + min. 45 KM + 1 ronde<br><br>
+
+    <b>Puntenverdeling</b>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Plaats</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th>
+                <th>P6</th><th>P7</th><th>P8</th><th>P9</th><th>P10</th>
+                <th>P11</th><th>P12</th><th>P13</th><th>P14</th><th>P15</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Punten</td>
+                <td>40</td><td>37</td><td>34</td><td>31</td><td>28</td>
+                <td>25</td><td>22</td><td>19</td><td>16</td><td>13</td>
+                <td>10</td><td>7</td><td>5</td><td>3</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    De punten van Race 1 en Race 2 worden aan het einde van de sessie opgeteld en de resultaten zijn beschikbaar via de volgende link:<br>
+    <a href="https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0">
+    https://main.fadx-racing.de/championship/4058b1e5-a9c6-44cd-bd2c-2217d07c5af9?server=0</a>.<br><br>
+
+    <b>Training en live-timing</b><br>
+    De server is altijd open voor oefensessies. Iedereen mag zo vaak en zo veel trainen als hij wil tot de kwalificatie van een racedag. Uitzonderingen kunnen serveronderhoud en updates van de serversoftware zijn.<br>
+    De live-timing pagina is voor iedereen toegankelijk en in te zien. Rondetijden worden hier opgeslagen en zijn beschikbaar via de volgende link:<br>
+    <a href="https://main.fadx-racing.de/live-timing?server=0">https://main.fadx-racing.de/live-timing?server=0</a><br><br>
+
+    <b>Auto's, skins en circuits</b><br>
+    Auto's, skins en circuits worden geleverd via de knop «Install Missing Content» en de Assetto Corsa Sync Tool.<br>
+    Skins en skinupdates dienen uitsluitend via de Skin-Uploader te worden ingediend. (Zie Apps &amp; Software)<br><br>
+
+    <b>FADX-Racing Sync Tool</b>
+    <ul>
+        <li>FADX-Racing biedt zijn eigen tool voor het synchroniseren van auto's, skins en circuits.</li>
+        <li>Met slechts een paar klikken blijf je altijd up-to-date.</li>
+        <li>Het wordt aanbevolen om voor elke kwalificatie te synchroniseren.</li>
+        <li>Meer informatie en ondersteuning op Discord: <a href="https://discord.com/channels/763485744819732530/1336695511507275860/1336695511507275860">FADX-Racing Sync Tool Discord</a></li>
+    </ul>
+
+    <b>Apps &amp; Software</b>
+    <ul>
+        <li>Custom Shaders Patch 0.2.2 of hoger</li>
+        <li>Assetto Corsa Content Manager (aanbevolen)</li>
+        <li>Assetto Corsa Sync Tool (aanbevolen)</li>
+        <li><a href="https://skin-upload.fadx-racing.de/">Skin-Uploader</a> – Hiermee kun je je skin uploaden en bijwerken.</li>
+    </ul>
+
+    <b>Opslag van persoonsgegevens</b><br>
+    Persoonsgegevens zoals SteamID, coureurnaam, IP-adressen, rondetijden, enz., worden opgeslagen op de server met IP-adres 213.165.76.10. Door deel te nemen aan een FADX-Racing Assetto Corsa-server of je in te schrijven voor het kampioenschap, ga je akkoord met de opslag van deze gegevens. Individuele verwijdering van gegevens is om technische redenen niet mogelijk.<br><br>
+
+    <h2>Reglement</h2>
+    <b>Voorwoord</b><br>
+    We proberen altijd met zo min mogelijk regels te werken, maar helemaal zonder gaat niet.<br>
+    Onbeschreven eenvoudige regels, die logisch of algemeen bekend zijn in de (virtuële) autosport, blijven van toepassing. Bijvoorbeeld het laten passeren bij blauwe vlag of dat je na gebruik van «Back to Pits» tijdens Race 1 en Race 2 niet meer terug de baan op kunt.<br><br>
+
+    <p>FADX-Racing is geen professionele vereniging of organisator. De kampioenschappen die we aanbieden organiseren we uit passie voor SimRacing en als hobby. We hechten waarde aan een informele sfeer tijdens onze kampioenschappen en evenementen, en deelname is meestal gratis. Als niet-professionele organisator kunnen admins, wedstrijdleiding of de racecommissie soms fouten maken, verkeerde beslissingen nemen of negatieve situaties over het hoofd zien. Toch doen we altijd ons best, naar beste weten en kunnen, om dergelijke voorvallen te analyseren en daar adequaat op te reageren. Onze voornaamste motivatie is om plezier en genot in SimRacing voor iedereen mogelijk te maken en samen onvergetelijke races te beleven.</p>
+
+    <b>Gedragscode</b>
+    <ul>
+        <li>Gedraag je eerlijk tegenover jezelf en anderen.</li>
+        <li>Volg de regels.</li>
+        <li>Iedereen heeft het recht om na de race een situatie te melden tijdens de analyse. Er wordt dan gezamenlijk bekeken of het om opzet, een rijfout of een normale strijd ging.</li>
+    </ul>
+
+    <b>Boxenstop</b>
+    <ul>
+        <li>GEEN verplichte pitstop.</li>
+        <li>Tanken en banden wisselen niet toegestaan tijdens Race 1 en Race 2. Reparaties zijn echter wel toegestaan.</li>
+    </ul>
+
+    <b>Vliegende start en formatie ronde</b>
+    <ul>
+        <li>FADX-Racing heeft er deze keer voor gekozen de formatie ronde zonder pace-truck uit te voeren.</li>
+        <li>P1 heeft het privilege om de formatie ronde te leiden nadat de rode lichten zijn uitgegaan.</li>
+        <li>Tijdens de formatie ronde geldt een snelheidslimiet van 80 km/h en geen inhalen (FCY).</li>
+        <li>De snelheidslimiet mag tijdelijk worden overschreden om bij de voorligger aan te sluiten.</li>
+        <li>Degenen die links gepositioneerd zijn, blijven links en achter hun voorligger.</li>
+        <li>Degenen die rechts gepositioneerd zijn, blijven rechts en achter hun voorligger.</li>
+        <li>Na de laatste bocht in de formatie ronde vervallen de snelheidslimiet en het inhaalverbod bij de finishlijn.</li>
+    </ul>
+
+</div>
+
+<script>
+window.onload = function() {
+    var select = document.getElementById('languageSelect');
+    var saved = localStorage.getItem('selectedLanguage') || 'spoiler1';
+    select.value = saved;
+    updateVisibility(saved);
+
+    document.querySelectorAll('time.qual-time').forEach(function(el) {
+        var dt = new Date(el.getAttribute('datetime'));
+        el.textContent = dt.toLocaleString(undefined, {
+            year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit', minute: '2-digit'
+        });
+    });
+};
+
+function updateVisibility(activeId) {
+    document.querySelectorAll('.spoiler-content').forEach(function(e) {
+        e.style.display = (e.id === activeId) ? 'block' : 'none';
+    });
+    localStorage.setItem('selectedLanguage', activeId);
+}
+
+document.getElementById('languageSelect').addEventListener('change', function(){
+    updateVisibility(this.value);
+});
+</script>
