@@ -328,7 +328,7 @@ button:not(:disabled):hover,
 */
 .card {
     background: #2c3e50;
-    border: none;
+    /*border: none;*/
     border-radius: 10px;
     overflow: visible; 
 }
