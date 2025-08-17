@@ -400,7 +400,19 @@ a:hover {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* 
-   (Optional) Additional global styles can be added here,
-   for instance to implement scroll animations or other interactions.
-*/
+.championship-event {
+  overflow: visible !important;
+}
+
+.championship-event .card-body,
+.championship-event .card-header {
+  overflow: visible !important;
+}
+
+.championship-event .dropdown {
+  position: static !important;
+}
+
+.championship-event .dropdown-menu {
+  z-index: 2001; 
+}
