@@ -21,7 +21,7 @@ function addDropdownMenus() {
         <div class="dropdown-divider"></div>
         <h4 class="dropdown-header font-italic">Apps</h4>
         <a class="dropdown-item" href="https://acstuff.ru/app/" target="_blank">Content Manager</a>
-		<a class="dropdown-item" href="https://dl.fadx-racing.de/downloads/apps/ACSyncTool2.zip" target="_blank">Assetto Corsa Sync Tool</a>
+		<a class="dropdown-item" href="https://dl.fadx-racing.de/downloads/apps/ACSyncTool3.zip" target="_blank">Assetto Corsa Sync Tool</a>
         <a class="dropdown-item" href="https://dl.fadx-racing.de/downloads/apps/RealPenaltyClientApp_v.1.02.00.zip" target="_blank">Real Penalty App</a>
         <a class="dropdown-item" href="acmanager://install?url=https://dl.fadx-racing.de/downloads/apps/SubStanding_v2.13.zip" target="_blank">SubStanding v2.13</a>
         <a class="dropdown-item" href="acmanager://install?url=https://dl.fadx-racing.de/downloads/apps/helicorsa_v7b.zip" target="_blank">Helicorsa v7b</a>
@@ -39,3 +39,4 @@ function addDropdownMenus() {
   const userAccountDropdown = document.getElementById('user-account-dropdown');
   userAccountDropdown.parentNode.insertBefore(dropdownContainer, userAccountDropdown);
 }
+
